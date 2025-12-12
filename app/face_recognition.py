@@ -15,9 +15,9 @@ from insightface.app import FaceAnalysis
 class FaceRecognitionEngine:
     def __init__(self, videos_dir: str, query_image: str, work_dir: str,
                  sample_every_seconds: int = 2,
-                 min_face_det_score: float = 0.60,
+                 min_face_det_score: float = 0.40,
                  top_k: int = 50,
-                 similarity_threshold: float = 0.35,
+                 similarity_threshold: float = 0.25,
                  merge_within_seconds: int = 4,
                  progress_callback: Optional[Callable] = None):
         self.videos_dir = videos_dir

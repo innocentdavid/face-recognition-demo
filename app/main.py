@@ -26,9 +26,9 @@ DB_PATH = os.path.join(WORK_DIR, "faces.db")
 FAISS_INDEX_PATH = os.path.join(WORK_DIR, "faces.index")
 
 SAMPLE_EVERY_SECONDS = 2          # try 1 for more accuracy, 3-5 for faster
-MIN_FACE_DET_SCORE = 0.60         # face detection confidence
+MIN_FACE_DET_SCORE = 0.40         # face detection confidence
 TOP_K = 50                        # how many nearest neighbors to retrieve
-SIMILARITY_THRESHOLD = 0.35       # cosine distance threshold (lower is stricter-ish after normalization)
+SIMILARITY_THRESHOLD = 0.25       # cosine distance threshold (lower is stricter-ish after normalization)
 MERGE_WITHIN_SECONDS = 4          # merge duplicate near timestamps
 
 
